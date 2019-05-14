@@ -22,5 +22,8 @@ console.log(  objFn({x:10}) ) //=> { x: { id: 1, val: 10 } }
 let objToArr2 = R.toPairs( objFn({x:10}) );
 console.log(  objToArr2 ) //=> [ [ 'x', { id: 1, val: 10 } ] ]
 
+R.prop('x', {x: 100}); //=> 100
+R.compose(R.inc, R.prop('x'))({ x: 3 }) //=> 4
+
 
 
