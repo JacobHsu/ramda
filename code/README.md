@@ -11,6 +11,8 @@ ramda [append](http://ramda.cn/docs/#append)
 [prop](https://ramdajs.com/docs/#prop)  
 [assoc](http://ramda.cn/docs/#assoc) 淺複製對象，然後設置或覆蓋對象的指定屬性
 
+[toPairs](https://ramdajs.com/docs/#toPairs): 將對象轉化為數組  
+
 ## List
 `$ code> node list`  
 [head](http://ramda.cn/docs/#head) 求列表或字符串的首個元素  
@@ -22,6 +24,8 @@ ramda [append](http://ramda.cn/docs/#append)
 
 ## Function  
 [addIndex](http://ramda.cn/docs/#addIndex)  創建新的列表迭代函數  
+
+[compose](https://ramdajs.com/docs/#compose)  
 
 ## Relation  
 `$ code> node relation`  
