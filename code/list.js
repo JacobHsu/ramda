@@ -27,3 +27,5 @@ let tailArr1 = R.tail([1]);        //=> []
 let tailStr = R.tail('abc');  //=> 'bc'
 let tailStr1 = R.tail('a');    //=> ''
 console.log(tailArr, tailArr1, tailStr, tailStr1)
+
+console.log( R.join(',', ['a', 'b', 'c']) );    //=> '1|2|3

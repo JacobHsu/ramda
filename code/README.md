@@ -20,7 +20,10 @@ ramda [append](http://ramda.cn/docs/#append)
 [init](http://ramda.cn/docs/#init) 返回 list 或 string 刪除最後一個元素後的部分  
 [tail](http://ramda.cn/docs/#tail) 刪除列表中的首個元素  
 
-[map](http://ramda.cn/docs/#map) Ramda為`Array`和`Object`提供了合適的`map`實現  
+[map](http://ramda.cn/docs/#map) Ramda為`Array`和`Object`提供了合適的`map`實現 
+
+[join](http://ramda.cn/docs/#join) 將列表中所有元素通過 分隔符 串連為一個字符串。
+> array to string ['a', 'b', 'c'] => a,b,c  
 
 ## Function  
 [addIndex](http://ramda.cn/docs/#addIndex)  創建新的列表迭代函數  
@@ -30,3 +33,9 @@ ramda [append](http://ramda.cn/docs/#append)
 ## Relation  
 `$ code> node relation`  
 [propEq](http://ramda.cn/docs/#propEq) 通過 `R.equals` 函數進行相等性判斷
+
+
+## type
+`$ code> node type`
+
+[type](http://ramda.cn/docs/#type)  返回輸入值的（原生）類型  
