@@ -29,3 +29,9 @@ let tailStr1 = R.tail('a');    //=> ''
 console.log(tailArr, tailArr1, tailStr, tailStr1)
 
 console.log( R.join(',', ['a', 'b', 'c']) );    //=> '1|2|3
+
+var mySubtract = function (a, b) {
+    return a - b;
+  };
+let reduceAns = R.reduce(mySubtract, 0)([1, 2, 3, 4]) // => ((((0 - 1) - 2) - 3) - 4) = -10
+console.log('R.reduce:',reduceAns);

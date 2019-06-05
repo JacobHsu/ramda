@@ -8,7 +8,8 @@ ramda [append](http://ramda.cn/docs/#append)
 
 ## Object
 `$ code> node object`  
-[prop](https://ramdajs.com/docs/#prop)  
+[prop](https://ramdajs.com/docs/#prop) 取出對像中指定屬性的值。如果不存在，則返回undefined。
+[props](http://ramda.cn/docs/#props) 返回 prop 的數組：輸入為 keys 數組，輸出為對應的 values 數組。
 [assoc](http://ramda.cn/docs/#assoc) 淺複製對象，然後設置或覆蓋對象的指定屬性
 
 [toPairs](https://ramdajs.com/docs/#toPairs): 將對象轉化為數組  
@@ -24,6 +25,8 @@ ramda [append](http://ramda.cn/docs/#append)
 
 [join](http://ramda.cn/docs/#join) 將列表中所有元素通過 分隔符 串連為一個字符串。
 > array to string ['a', 'b', 'c'] => a,b,c  
+
+[reduce](http://ramda.cn/docs/#reduce) 數組成員依次執行指定函數，每一次的運算結果都會進入一個累積變量。 左摺疊操作。
 
 ## Function  
 [addIndex](http://ramda.cn/docs/#addIndex)  創建新的列表迭代函數  
