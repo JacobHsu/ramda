@@ -43,3 +43,10 @@ ramda [append](http://ramda.cn/docs/#append)
 `$ code> node type`
 
 [type](http://ramda.cn/docs/#type)  返回輸入值的（原生）類型  
+
+# case 
+
+### get select option array option name
+
+data_array.js 
+`const nation = R.find( R.propEq('value', '2' ) )(nationOptions).title`  
