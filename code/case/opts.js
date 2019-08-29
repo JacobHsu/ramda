@@ -45,4 +45,8 @@ console.log( mapReRes( {a: 2, b: 5, c: 8})) //=>[ [ 'c', 8 ], [ 'b', 5 ], [ 'a',
 
 // 物件轉陣列 key value 互換  
 const composeMapRes = R.compose(R.map(R.reverse), R.toPairs);
+// step1 compose   R.toPairs -> R.map(R.reverse)  -> map  -> reverse
+// step2 toPairs  {a: 1, b: 4, c: 7} toPairs [['a', 1], ['b', 4], ['c', 7]]
+// step3 map   [['a', 1], ['b', 4], ['c', 7]]
+// step4 reverse ['a', 1] map reverse [ 1, 'a' ] , ['b', 4] map reverse [ 4, 'b' ] ...
 console.log( composeMapRes( {a: 1, b: 4, c: 7})) //=>[ [ 1, 'a' ], [ 4, 'b' ], [ 7, 'c' ] ]
