@@ -13,3 +13,11 @@ let input = [
 const pwd = v => R.assoc('password','****', v) 
 let ret = R.map(pwd, input)
 console.log(ret)
+// [ { name: 'jacob', key: '21', password: '****' },
+//  { name: 'jason', key: '22', password: '****' } ]
+
+const propKey = R.prop('key')
+let propRet = R.map( propKey, input)
+let prefix = R.map( (v)=>('A'+v),propRet)
+console.log(propRet) // [ '21', '22' ]
+console.log(prefix)  // [ 'A21', 'A22' ]

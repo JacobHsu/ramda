@@ -1,5 +1,6 @@
 # ramda
 
+[Ramda 中文](http://ramda.cn/)  
 [Ramda 函数库参考教程](http://www.ruanyifeng.com/blog/2017/03/ramda.html)  
 > 你可能會問，Underscore 和 Lodash 已經這麼流行了，為什麼還要學習好像雷同的 Ramda 呢？  
 回答是，前兩者的參數位置不對，把處理的數據放到了第一個參數。  

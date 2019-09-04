@@ -29,6 +29,10 @@ ramda [append](http://ramda.cn/docs/#append)
 
 [reduce](http://ramda.cn/docs/#reduce) 數組成員依次執行指定函數，每一次的運算結果都會進入一個累積變量。 左摺疊操作。
 
+[filter](https://ramdajs.com/docs/#filter)  
+[reject](https://ramdajs.com/docs/#reject)    
+
+
 ## Function  
 [addIndex](http://ramda.cn/docs/#addIndex)  創建新的列表迭代函數  
 
