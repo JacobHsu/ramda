@@ -42,6 +42,8 @@ ramda [append](http://ramda.cn/docs/#append)
 `$ code> node relation`  
 [propEq](http://ramda.cn/docs/#propEq) 通過 `R.equals` 函數進行相等性判斷
 
+[sort](http://ramda.cn/docs/#sort)      
+[sortWith](http://ramda.cn/docs/#sortWith)    
 
 ## type
 `$ code> node type`
