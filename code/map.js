@@ -21,3 +21,10 @@ let propRet = R.map( propKey, input)
 let prefix = R.map( (v)=>('A'+v),propRet)
 console.log(propRet) // [ '21', '22' ]
 console.log(prefix)  // [ 'A21', 'A22' ]
+
+
+const xyz = { x: 1, y: 2, z: 3 };
+const prependKeyAndDouble = (num, key, obj) => key + (num * 2);
+
+const mapObjIndexedRes= R.mapObjIndexed(prependKeyAndDouble, xyz); //=> { x: 'x2', y: 'y4', z: 'z6' }
+console.log(mapObjIndexedRes)
