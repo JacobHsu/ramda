@@ -12,7 +12,7 @@ ramda [append](http://ramda.cn/docs/#append)
 [props](http://ramda.cn/docs/#props) 返回 prop 的數組：輸入為 keys 數組，輸出為對應的 values 數組。
 [assoc](http://ramda.cn/docs/#assoc) 淺複製對象，然後設置或覆蓋對象的指定屬性
 
-[toPairs](https://ramdajs.com/docs/#toPairs): 將對象轉化為數組  
+[toPairs](https://ramdajs.com/docs/#toPairs): 將對象轉化為數組   <-> fromPairs
 
 ## List
 `$ code> node list`  
@@ -31,6 +31,8 @@ ramda [append](http://ramda.cn/docs/#append)
 
 [filter](https://ramdajs.com/docs/#filter)  
 [reject](https://ramdajs.com/docs/#reject)    
+
+[fromPairs](http://ramda.cn/docs/#fromPairs): 將數組轉化為對象  
 
 
 ## Function  
