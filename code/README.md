@@ -20,7 +20,10 @@ ramda [append](http://ramda.cn/docs/#append)
 [last](http://ramda.cn/docs/#last) 返回列表或字符串的最後一個元素  
 [init](http://ramda.cn/docs/#init) 返回 list 或 string 刪除最後一個元素後的部分  
 [tail](http://ramda.cn/docs/#tail) 刪除列表中的首個元素   
-[startsWith](http://ramda.cn/docs/#startsWith) 檢查列表是否以給定的值開頭     
+[startsWith](http://ramda.cn/docs/#startsWith) 檢查列表是否以給定的值開頭  
+
+[take](http://ramda.cn/docs/#take) 返回列表的前 `n` 个元素  
+[drop](http://ramda.cn/docs/#drop) 删除给定 list，string 
 
 [map](http://ramda.cn/docs/#map) Ramda為`Array`和`Object`提供了合適的`map`實現 
 
@@ -38,7 +41,7 @@ ramda [append](http://ramda.cn/docs/#append)
 ## Function  
 [addIndex](http://ramda.cn/docs/#addIndex)  創建新的列表迭代函數  
 
-[compose](https://ramdajs.com/docs/#compose)  
+[compose](https://ramdajs.com/docs/#compose)  從右往左執行函數組合
 
 ## Relation  
 `$ code> node relation`  
