@@ -2,4 +2,6 @@
 * [首页](/)
 * [指南](/guide)
 * **Ramda**
-* [R.map](/zh-tw/README.md)
+* [R.map](/zh-cn/README.md)
+* [Math](/zh-cn/Math.md)
+* [Function](/zh-cn/Function.md)
