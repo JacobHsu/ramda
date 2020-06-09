@@ -13,6 +13,8 @@ Ramda 的數據一律放在最後一個參數，理念是"function first，data 
 `$ docsify init ./docs`  
 `$ docsify serve docs`  
 
+[Embedded code fragments](https://docsify.js.org/#/embed-files)
+
 # hexo 
 
 [hexo-theme-doc](https://github.com/zalando-incubator/hexo-theme-doc)  
