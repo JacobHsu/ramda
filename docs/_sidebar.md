@@ -6,3 +6,4 @@
 * [Math](/zh-cn/Math.md)
 * [Function](/zh-cn/Function.md)
 * [List](/zh-cn/List.md)
+* [Logic](/zh-cn/Logic.md)
