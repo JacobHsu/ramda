@@ -15,12 +15,13 @@ R.any(lessThan2)([1, 2]); //=> true
 //console.log( R.lt(2)(3) ); // true 
 //console.log( R.lt(2) ); // [Function: f1]
 
-//const mergeThree = (a, b, c) => [].concat(a, b, c);
-//mergeThree(1, 2, 3); //=> [1, 2, 3]
-//R.flip(mergeThree)(1, 2, 3); //=> [2, 1, 3]
+const mergeThree = (a, b, c) => [].concat(a, b, c);
+mergeThree(1, 2); //=> [1, 2, 3]
+const ret = R.flip(mergeThree)(1, 2, 3); //=> [2, 1, 3]
+console.log(ret)
 
-console.log(lessThan2(1)) // true 1<2
-console.log(lessThan2(2)) // false 2<3
+// console.log(lessThan2(1)) // true 1<2
+// console.log(lessThan2(2)) // false 2<3
 
-const res = R.any(lessThan2)([1, 2]);
-console.log(res)
+// const res = R.any(lessThan2)([1, 2]);
+// console.log(res)
