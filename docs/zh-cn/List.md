@@ -37,3 +37,13 @@ R.aperture(2, [1, 2, 3, 4, 5]); //=> [[1, 2], [2, 3], [3, 4], [4, 5]]
 R.aperture(3, [1, 2, 3, 4, 5]); //=> [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
 R.aperture(7, [1, 2, 3, 4, 5]); //=> []
 ```
+
+## append
+
+在列表末尾拼接一个元素。
+
+```js
+R.append('tests', ['write', 'more']); //=> ['write', 'more', 'tests']
+R.append('tests', []); //=> ['tests']
+R.append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
+```

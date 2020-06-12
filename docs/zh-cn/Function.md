@@ -33,3 +33,18 @@ R.ap([R.concat('tasty '), R.toUpper], ['pizza', 'salad']); //=> ["tasty pizza", 
 // when only two functions are passed
 R.ap(R.concat, R.toUpper)('Ramda') //=> 'RamdaRAMDA'
 ```
+
+## apply
+
+将函数 `fn` 作用于参数列表 `args`。`apply` 可以将变参函数转换为为定参函数。如果上下文很重要，则 fn 应该绑定其上下文。
+
+```js
+const nums = [1, 2, 3, -99, 42, 6, 7];
+R.apply(Math.max, nums); //=> 42
+```
+
+## applySpec
+
+接受一个属性值为函数的对象，返回一个能生成相同结构对象的函数。返回的函数使用传入的参数调用对象的每个属性位对应的函数，来生成相应属性的值。
+
+[filename](code/function/applySpec.js ':include :type=code :fragment=demo')
