@@ -48,3 +48,44 @@ R.apply(Math.max, nums); //=> 42
 接受一个属性值为函数的对象，返回一个能生成相同结构对象的函数。返回的函数使用传入的参数调用对象的每个属性位对应的函数，来生成相应属性的值。
 
 [filename](code/function/applySpec.js ':include :type=code :fragment=demo')
+
+## applyTo
+
+接受一个值，并将一个函数作用于其上。
+该函数又被称为 `thrush` combinator.
+
+```js
+const t42 = R.applyTo(42);
+t42(R.identity); //=> 42
+t42(R.add(1)); //=> 43
+```
+
+## ascend
+
+由返回值可与 < 和 > 比较的函数，创建一个升序比较函数。
+
+```js
+const byAge = R.ascend(R.prop('age'));
+const people = [
+  { name: 'Emma', age: 70 },
+  { name: 'Peter', age: 78 },
+  { name: 'Mikhail', age: 62 },
+];
+const peopleByYoungestFirst = R.sort(byAge, people);
+  //=> [{ name: 'Mikhail', age: 62 },{ name: 'Emma', age: 70 }, { name: 'Peter', age: 78 }]
+```
+
+## descend
+
+由返回值可与 < 和 > 比较的函数，创建一个降序比较函数。
+
+```js
+const byAge = R.descend(R.prop('age'));
+const people = [
+  { name: 'Emma', age: 70 },
+  { name: 'Peter', age: 78 },
+  { name: 'Mikhail', age: 62 },
+];
+const peopleByOldestFirst = R.sort(byAge, people);
+  //=> [{ name: 'Peter', age: 78 }, { name: 'Emma', age: 70 }, { name: 'Mikhail', age: 62 }]
+```
