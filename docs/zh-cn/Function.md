@@ -89,3 +89,20 @@ const people = [
 const peopleByOldestFirst = R.sort(byAge, people);
   //=> [{ name: 'Peter', age: 78 }, { name: 'Emma', age: 70 }, { name: 'Mikhail', age: 62 }]
 ```
+
+## binary
+
+将任意元函数封装为二元函数（只接受2个参数）中。任何额外的参数都不会传递给被封装的函数。
+
+```js
+const takesThreeArgs = function(a, b, c) {
+  return [a, b, c];
+};
+takesThreeArgs.length; //=> 3
+takesThreeArgs(1, 2, 3); //=> [1, 2, 3]
+
+const takesTwoArgs = R.binary(takesThreeArgs);
+takesTwoArgs.length; //=> 2
+// Only 2 arguments are passed to the wrapped function
+takesTwoArgs(1, 2, 3); //=> [1, 2, undefined]
+```

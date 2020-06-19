@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 1.0.4
+
+- assoc, assocPath, binary
+
 ## Version 1.0.3
 
 - applyTo, ascend, descend
