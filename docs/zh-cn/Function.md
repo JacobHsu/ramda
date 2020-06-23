@@ -106,3 +106,22 @@ takesTwoArgs.length; //=> 2
 // Only 2 arguments are passed to the wrapped function
 takesTwoArgs(1, 2, 3); //=> [1, 2, undefined]
 ```
+
+## bind
+
+创建一个绑定了上下文的函数。
+
+注意：与 Function.prototype.bind 不同，R.bind 不会绑定额外参数。
+
+```js
+const log = R.bind(console.log, console);
+R.pipe(R.assoc('a', 2), R.tap(log), R.assoc('a', 3))({a: 1}); //=> {"a":2} {a: 3}
+```
+
+## call
+
+提取第一个参数作为函数，其余参数作为刚提取的函数的参数，调用该函数并将结果返回。
+
+```js
+R.call(R.add, 1, 2); //=> 3
+```
