@@ -20,3 +20,17 @@ R.assocPath(['a', 'b', 'c'], 42, {a: {b: {c: 0}}}); //=> {a: {b: {c: 42}}}
 // Any missing or non-object keys in path will be overridden
 R.assocPath(['a', 'b', 'c'], 42, {a: 5}); //=> {a: {b: {c: 42}}}
 ```
+
+## clone
+
+深复制。其值可能（嵌套）包含 `Array`、`Object`、`Number`、`String`、`Boolean`、`Date` 类型的数据。`Function` 通过引用复制。
+
+若自身存在 clone 方法，则调用自身的 clone 方法。
+
+```js
+const objects = [{}, {}, {}];
+const objectsClone = R.clone(objects);
+objects === objectsClone; //=> false
+objects[0] === objectsClone[0]; //=> false
+```
+

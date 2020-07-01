@@ -47,3 +47,20 @@ R.append('tests', ['write', 'more']); //=> ['write', 'more', 'tests']
 R.append('tests', []); //=> ['tests']
 R.append(['tests'], ['write', 'more']); //=> ['write', 'more', ['tests']]
 ```
+
+## chain
+
+chain 将函数映射到列表中每个元素，并将结果连接起来。 chain 在一些库中也称为 flatMap（先 map 再 flatten ）。
+
+若第二个参数存在 chain 方法，则调用其自身的 chain方法。该参数需符合 FantasyLand Chain 规范。
+
+如果第二个参数是函数，`chain(f, g)(x)` 等价于 `f(g(x), x)`。
+
+```js
+const duplicate = n => [n, n];
+R.chain(duplicate, [1, 2, 3]); //=> [1, 1, 2, 2, 3, 3]
+
+R.chain(R.append, R.head)([1, 2, 3]); //=> [1, 2, 3, 1]
+//=>  R.append( R.head([1, 2, 3]), [1, 2, 3] )
+//=>  R.append( 1, [1, 2, 3] ) => [1, 2, 3, 1]
+```

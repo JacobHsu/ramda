@@ -1,5 +1,9 @@
 # Change Log
 
+## Version 1.0.6
+
+- chain, clamp, clone
+
 ## Version 1.0.5
 
 - bind, both, call
